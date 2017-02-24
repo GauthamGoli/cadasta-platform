@@ -57,7 +57,7 @@ class TenureRelationshipForm(AttributeForm):
     tenure_type = forms.ChoiceField(required=True, choices=[])
 
     # class Media:
-        # js = ('/static/js/rel_tenure.js', '/static/js/party_attrs.js')
+    #    js = ('/static/js/rel_tenure.js', '/static/js/party_attrs.js')
 
     def __init__(self, project, spatial_unit, *args, **kwargs):
         super().__init__(*args, **kwargs)

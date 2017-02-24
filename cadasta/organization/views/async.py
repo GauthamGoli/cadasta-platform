@@ -3,7 +3,6 @@ import core.views.generic as generic
 
 from . import mixins
 from .. import messages as error_messages
-from .. import serializers
 from ..models import Project
 
 

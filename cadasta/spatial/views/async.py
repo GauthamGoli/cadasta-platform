@@ -262,6 +262,10 @@ class TenureRelationshipAdd(LoginPermissionRequiredMixin,
         return context
 
     def get_success_url(self):
-        # return (reverse('locations:detail', kwargs=self.kwargs) +
-        #         '#relationships')
-        return '#'
+        return (reverse(
+            'organization:project-dashboard',
+            kwargs={
+                'organization': self.kwargs['organization'],
+                'project': self.kwargs['project']
+            }) + '#/records/location/' + self.kwargs['location'])
+        # return '#'

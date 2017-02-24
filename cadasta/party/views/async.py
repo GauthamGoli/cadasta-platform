@@ -1,5 +1,6 @@
 from jsonattrs.mixins import JsonAttrsMixin
 from core.views import generic
+from django.core.urlresolvers import reverse
 import django.views.generic as base_generic
 from core.mixins import LoginPermissionRequiredMixin, update_permissions
 from organization.views import mixins as organization_mixins
